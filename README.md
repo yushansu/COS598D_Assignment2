@@ -20,13 +20,13 @@ However, this equation is actually inaccurate. The correct backward gradient sho
 
 Details about this correction can be found in the [notes](notes/notes.pdf) (section 1).
 
-## 2. Implemente `updateBinaryGradWeight` function in `util.py`.
+## 2. Implement `updateBinaryGradWeight` function in `util.py`.
 Please follow the notes to implement weights gradient calucation. 
 
 You will implement the `updateBinaryGradWeight` for both `MNIST/util.py` and `CIFAR_10/util.py`. 
 
 ## 3. Report results and discussion
-### 3.1 Please fill the resutls table
+### 3.1 Please fill the results table
 
 You need to evaluate the efficiency and accuracy of binary convolution vs. standard convolution (floating-point). 
 
