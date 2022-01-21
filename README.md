@@ -30,7 +30,7 @@ You will implement the `updateBinaryGradWeight` for both `MNIST/util.py` and `CI
 
 You need to evaluate the efficiency and accuracy of binary convolution vs. standard convolution (floating-point). 
 
-You will perform the evaluation on MNIST and Cifar10 datasets. You will evaluate LeNet5 for MNIST and ResNet18 for Cifar10. MNIST experiment is in `MNIST` folder. Cifar10 experiment is in `CIFAR_10` folder. Here I show a example about how to run MNIST with LeNet5.
+You will perform the evaluation on MNIST and Cifar10 datasets. You will evaluate LeNet5 for MNIST and Network in Network (NIN) [2] for Cifar10. MNIST experiment is in `MNIST` folder. Cifar10 experiment is in `CIFAR_10` folder. Here I show a example about how to run MNIST with LeNet5.
 
 ***How to run***
 
@@ -109,19 +109,19 @@ print('Time: ', stop - start)
 
 ### 3.2 Hyper-parameters
 
-Please show how the variations on number of channels and filter size will affect speedup.
-Please refer to Fig.4(b-c) in the original paper.
+Please show how the variations on number of channels and filter size will affect speedup of inference.
+Please refer to Fig.4(b-c) in the original paper [1].
 
 For simplicity, we conduct this experiment on MNIST with LeNet5 only. Specifically:
 
 Case 1: We fix all the filter size in the default setting. We change the number of channels of `self.bin_conv2` layer in `LeNet_5`. The default number of channels ***k*** is `50`. You need to record the spead up with `k \in [10, 30, 50, 128, 512, 1024]`.
 
-Case 2: We fix all the number of channels in the default setting. We change chage the filter size of `self.bin_conv2` layer in `LeNet_5`. The default filter size ***s*** is `5`.  You need to record the spead up with `k \in [1, 2, 3, 4, 5, 6, 7, 8]`.
+Case 2: We fix all the number of channels in the default setting. We change chage the filter size of `self.bin_conv2` layer in `LeNet_5`. The default filter size ***s*** is `5`.  You need to record the spead up with `s \in [1, 2, 3, 4, 5, 6, 7, 8]`.
 
-Please change the input channle for `self.ip1` correspondingly. 
+Please change the input channel for `self.ip1` correspondingly. 
 
 
 ### 3.3 Discuss your results
-Please describe the settings of your experiments. Please include the required results (described in 3.1 and 3.2). Please add captions to describe your figures and tables. Please analyze the advangetages and limitations of XNOR-NET. It would be best to write brief discussions on your results, such as the patterns (what and why), conclusions, and any observations you want to discuss. 
+Please describe the settings of your experiments. Please include the required results (described in 3.1 and 3.2). Please add captions to describe your figures and tables. Please analyze the advantages and limitations of XNOR-NET. It would be best to write brief discussions on your results, such as the patterns (what and why), conclusions, and any observations you want to discuss. 
 
 
