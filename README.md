@@ -114,9 +114,9 @@ Please refer to Fig.4(b-c) in the original paper [1].
 
 For simplicity, we conduct this experiment on MNIST with LeNet5 only. Specifically:
 
-Case 1: We fix all the filter size in the default setting. We change the number of channels of `self.bin_conv2` layer in `LeNet_5`. The default number of channels ***k*** is `50`. You need to record the spead up with `k \in [10, 30, 50, 128, 512, 1024]`.
+Case 1: We fix all the filter size in the default setting. We change the number of channels of `self.bin_conv2` layer in `LeNet_5`. The default number of channels ***k*** is `50`. You need to record the speed up with `k \in [10, 30, 50, 128, 512, 1024]`.
 
-Case 2: We fix all the number of channels in the default setting. We change chage the filter size of `self.bin_conv2` layer in `LeNet_5`. The default filter size ***s*** is `5`.  You need to record the spead up with `s \in [1, 2, 3, 4, 5, 6, 7, 8]`.
+Case 2: We fix all the number of channels in the default setting. We change chage the filter size of `self.bin_conv2` layer in `LeNet_5`. The default filter size ***s*** is `5`.  You need to record the speed up with `s \in [1, 2, 3, 4, 5, 6, 7, 8]`.
 
 Please change the input channel for `self.ip1` correspondingly. 
 
