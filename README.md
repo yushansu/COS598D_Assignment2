@@ -72,7 +72,7 @@ $ python main_vanilla.py
 | MNIST    | LeNet5              |                      |                   |
 | Cifar10  | NIN               |                      |                   |
 
-***Compare Memory Comsumption for the Trained Model***
+***Compare Memory Consumption for the Trained Model***
 | Dataset  | Network                  | Vanilla Net (floating-point)                   | XNOR-NET |
 |----------|:-------------------------|:----------------------------|:---------------------------|
 | MNIST    | LeNet5              |                      |                   |
